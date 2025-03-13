@@ -53,6 +53,7 @@ function ItemImportance({name, importance}) {
         </li>
     )
 }
+
 function PackingList() {
     return (
         <section>

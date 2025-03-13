@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
 
-function App() {
-  return (
-   <>
-   <h1>hello world</h1>
-   </>
-  )
+const App = () => {
+    const [heading, setHeading]= useState("Monkeyss");
+    const clickHandler = () => {
+        setHeading("Banana");
+    };
+    return (
+        <>
+        <button type="button" onClick={clickHandler}>
+            Click Me
+            </button>
+            <h1>{heading}</h1>
+            </>
+    )
 }
 
 export default App

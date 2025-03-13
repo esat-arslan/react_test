@@ -1,0 +1,19 @@
+#image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
